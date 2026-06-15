@@ -1,0 +1,193 @@
+/* 1. IMPORTAÇÃO DA FONTE POPPINS (Se usar) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #000000;
+    color: #333333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 60px 20px; /* Ajustado para não esmagar em telas menores */
+    display: flex;
+    justify-content: center; /* Centraliza o container principal na tela */
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+}
+
+.titulo {
+    color: #16C99C;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 800; 
+}
+
+/* =======================================================
+   AQUI ESTÁ A MÁGICA PARA CENTRALIZAR OS LINKS ABAIXO DO TÍTULO 
+   ======================================================= */
+
+.container-links {
+    display: flex;
+    justify-content: center; /* Centraliza a lista na horizontal */
+    width: 100%;
+}
+
+.container-links ul {
+    list-style: none; /* Remove as bolinhas da lista */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Coloca um botão embaixo do outro */
+    gap: 20px; /* Espaçamento maneiro entre os botões */
+    align-items: center; /* Garante que os botões alinhem pelo centro */
+}
+
+/* ======================================================= */
+
+.botao {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem; /* Aumentei um pouquinho para combinar com o visual */
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-align: center;
+    min-width: 280px; /* Garante que todos os botões fiquem do mesmo tamanho */
+}
+
+.botao:hover {
+    background-color: #444444;
+}
+
+/* Outras classes que você já tinha criado */
+.fundo-verde {
+    background-color: #6D854A;
+    padding: 40px;
+    width: 100%;
+    min-height: 500px;
+    border-radius: 10px;
+}
+
+.fundo-verde-titulo {
+    background-color: #C0FAED;
+    padding: 10px;
+    width: 40%;
+    min-height: 50px;
+    border-radius: 10px;
+    color: #03634D;
+    font-size: 50px;
+    text-align: center;
+    margin: 0 auto 30px auto; /* Centraliza o bloco verde se for usar */
+    font-weight: 800; 
+}
+
+.subtitulo {
+    color: #0BD52C;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.item {
+    color: #0E641D;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* =======================================================
+   ESTILO DO INFOGRÁFICO 
+   ======================================================= */
+
+/* Centraliza o container na página */
+.container-infografico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 80vh; /* Ocupa quase a tela toda para centralizar na vertical */
+    padding: 20px;
+}
+
+/* Deixa a imagem bonita, centralizada e responsiva */
+.container-infografico img {
+    max-width: 100%; /* Não deixa a imagem estourar o tamanho da tela */
+    height: auto;    /* Mantém a proporção certa sem distorcer */
+    border-radius: 12px; /* Arredonda os cantos da imagem de leve */
+    box-shadow: 0px 8px 24px rgba(22, 201, 156, 0.2); /* Cria uma sombra verde bem sutil no fundo (da cor do seu título) */
+    border: 2px solid #16C99C; /* Uma borda fina para destacar a imagem no fundo preto */
+}
+/* =======================================================
+   ESTILO DOS CRÉDITOS DO GRUPO (RODAPÉ)
+   ======================================================= */
+
+/* Estilização do rodapé */
+.creditos-grupo {
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Cor e tamanho do texto "Desenvolvido por:" */
+.creditos-grupo p {
+    color: #16C99C; /* Mesma cor verde bonita do seu título */
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Organiza a lista de nomes */
+.creditos-grupo ul {
+    list-style: none; /* Remove as bolinhas */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os nomes na horizontal */
+    gap: 25px; /* Dá um espaço entre um nome e outro */
+    flex-wrap: wrap; /* Se a tela for pequena (celular), os nomes quebram a linha sozinhos */
+}
+
+/* Estilo de cada nome do grupo */
+.creditos-grupo li {
+    color: #ffffff; /* Nome em branco para destacar no fundo preto */
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Ajuste para o container do infográfico não sumir com o espaço debaixo */
+.container-infografico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px; /* Cria um espaçamento generoso antes de começar os créditos */
+}
+
+/* Garante que a imagem fique linda e centralizada */
+.container-infografico img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0px 8px 24px rgba(22, 201, 156, 0.2);
+    border: 2px solid #16C99C;
+}
+
+/* Alinha os créditos e o botão perfeitamente em coluna embaixo do infográfico */
+.creditos-grupo {
+    text-align: center;
+    padding: 20px 0 60px 0; /* Dá um espaço legal no final da página */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Espaçamento do botão de voltar */
+.botao-voltar {
+    margin-top: 40px !important;
+}
